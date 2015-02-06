@@ -1,0 +1,16 @@
+{
+    "name": "vagrant/framework",
+    "description": "Custom framework",
+    "authors": [
+        {
+            "name": "Robert Kel",
+            "email": "kel.robert@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "symfony/class-loader": "2.1.*",
+        "symfony/http-foundation": "2.1.*",
+        "symfony/routing": "2.1.*"
+    }
+}
