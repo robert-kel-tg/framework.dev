@@ -16,12 +16,20 @@ class Framework
     protected $matcher;
     protected $resolver;
 
+    /**
+     * @param UrlMatcherInterface $matcher
+     * @param ControllerResolverInterface $resolver
+     */
     public function __construct(UrlMatcherInterface $matcher, ControllerResolverInterface $resolver)
     {
         $this->matcher = $matcher;
         $this->resolver = $resolver;
     }
 
+    /**
+     * @param Request $request
+     * @return mixed|Response
+     */
     public function handle(Request $request)
     {
         try {
