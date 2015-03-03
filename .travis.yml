@@ -10,4 +10,4 @@ before_script:
     - curl -s http://getcomposer.org/installer | php
     - php composer.phar install
 
-script: phpunit -c ./phpunit.xml --coverage-clover build/logs/clover.xml
+script: phpunit -c ./phpunit.xml.dist --coverage-clover build/logs/clover.xml
