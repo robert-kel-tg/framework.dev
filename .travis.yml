@@ -11,3 +11,4 @@ before_script:
     - php composer.phar install
 
 script: phpunit
+phpunit -c ./phpunit.xml --coverage-clover build/logs/clover.xml
